@@ -335,31 +335,33 @@ function App() {
       </main>
 
       <footer className="site-footer">
-        <div className="section-inner footer__grid">
-          <div>
-            <p className="footer__brand">App Incubator</p>
-            <p className="footer__muted">App Incubation Fund</p>
+        <div className="section-inner">
+          <div className="footer__grid">
+            <div>
+              <p className="footer__brand">App Incubator</p>
+              <p className="footer__muted">App Incubation Fund</p>
+            </div>
+            <div>
+              <p className="footer__label">Program</p>
+              <ul className="footer__links">
+                <li>
+                  <a href="#about">Program overview</a>
+                </li>
+                <li>
+                  <a href="#apply">Mentor application</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="footer__label">Contact</p>
+              <p>
+                <a href="mailto:incubator@example.com">incubator@example.com</a>
+              </p>
+            </div>
           </div>
-          <div>
-            <p className="footer__label">Program</p>
-            <ul className="footer__links">
-              <li>
-                <a href="#about">Program overview</a>
-              </li>
-              <li>
-                <a href="#apply">Mentor application</a>
-              </li>
-            </ul>
+          <div className="footer__legal">
+            <p>ICP filing: 浙ICP备2026018678号-1</p>
           </div>
-          <div>
-            <p className="footer__label">Contact</p>
-            <p>
-              <a href="mailto:incubator@example.com">incubator@example.com</a>
-            </p>
-          </div>
-        </div>
-        <div className="section-inner footer__legal">
-          <p>ICP filing: 浙ICP备2026018678号-1</p>
         </div>
       </footer>
     </div>
