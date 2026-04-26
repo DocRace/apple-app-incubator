@@ -1,4 +1,5 @@
 import './App.css'
+import { publicPath } from './publicPath'
 
 const offerings = [
   {
@@ -52,91 +53,91 @@ const mentors = [
     name: 'Liu Jia',
     org: 'Jinsha River Venture Capital',
     role: 'Partner',
-    photo: '/mentors/liu-jia.png',
+    photo: publicPath('mentors/liu-jia.png'),
   },
   {
     name: 'Li Xinhang',
     org: 'Tongge Ventures',
     role: 'Executive Director',
-    photo: '/mentors/li-xinhang.png',
+    photo: publicPath('mentors/li-xinhang.png'),
   },
   {
     name: 'Wang Xiaoyu',
     org: 'GURU NETWORK',
     role: 'Founder & CEO',
-    photo: '/mentors/wang-xiaoyu.png',
+    photo: publicPath('mentors/wang-xiaoyu.png'),
   },
   {
     name: 'Xu Wu',
     org: 'ZhenFund',
     role: 'Partner',
-    photo: '/mentors/xu-wu.png',
+    photo: publicPath('mentors/xu-wu.png'),
   },
   {
     name: 'Chen Mingquan',
     org: 'Danatech',
     role: 'Founder',
-    photo: '/mentors/chen-mingquan.png',
+    photo: publicPath('mentors/chen-mingquan.png'),
   },
   {
     name: 'Cheng Xiangjun',
     org: 'iReader Technology',
     role: 'Chairman',
-    photo: '/mentors/cheng-xiangjun.png',
+    photo: publicPath('mentors/cheng-xiangjun.png'),
   },
   {
     name: 'Fang Bo',
     org: 'WePai Network',
     role: 'Founder',
-    photo: '/mentors/fang-bo.png',
+    photo: publicPath('mentors/fang-bo.png'),
   },
   {
     name: 'Liu Yiwei',
     org: 'LeXin ShengWen',
     role: 'CEO',
-    photo: '/mentors/liu-yiwei.png',
+    photo: publicPath('mentors/liu-yiwei.png'),
   },
   {
     name: 'Shen Xiang',
     org: 'DianDian Interactive',
     role: 'CTO',
-    photo: '/mentors/shen-xiang.png',
+    photo: publicPath('mentors/shen-xiang.png'),
   },
   {
     name: 'Wang Jialiang',
     org: 'TouchPal',
     role: 'Co-founder & CEO',
-    photo: '/mentors/wang-jialiang.png',
+    photo: publicPath('mentors/wang-jialiang.png'),
   },
   {
     name: 'Xie Feng',
     org: 'Gamehaus',
     role: 'CEO',
-    photo: '/mentors/xie-feng.png',
+    photo: publicPath('mentors/xie-feng.png'),
   },
   {
     name: 'Zhu Bideng',
     org: '99 Interactive · Genki Forest',
     role: 'Chairman · Executive Director',
-    photo: '/mentors/zhu-bideng.png',
+    photo: publicPath('mentors/zhu-bideng.png'),
   },
   {
     name: 'Cai Hua',
     org: 'WeLink App',
     role: 'Founder',
-    photo: '/mentors/cai-hua.png',
+    photo: publicPath('mentors/cai-hua.png'),
   },
   {
     name: 'Chen Wenzhi',
     org: 'Zhejiang University, College of Computer Science',
     role: 'Professor',
-    photo: '/mentors/chen-wenzhi.png',
+    photo: publicPath('mentors/chen-wenzhi.png'),
   },
   {
     name: 'Zhang Kejun',
     org: 'Zhejiang University, School of Artificial Intelligence',
     role: 'Professor',
-    photo: '/mentors/zhang-kejun.png',
+    photo: publicPath('mentors/zhang-kejun.png'),
   },
 ] as const
 
@@ -156,7 +157,7 @@ function App() {
           >
             <img
               className="brand__zju"
-              src="/logo-text-left.svg"
+              src={publicPath('logo-text-left.svg')}
               alt=""
               width={40}
               height={40}
@@ -165,7 +166,7 @@ function App() {
             <span className="brand__rule" aria-hidden="true" />
             <img
               className="brand__app"
-              src="/logo-apple.svg"
+              src={publicPath('logo-apple.svg')}
               alt=""
               width={150}
               height={40}
@@ -201,7 +202,19 @@ function App() {
 
       <main id="main">
         <section className="hero" id="top">
-          <div className="hero__bg" aria-hidden="true" />
+          <div
+            className="hero__bg"
+            aria-hidden="true"
+            style={{
+              background: `linear-gradient(
+      100deg,
+      rgba(2, 8, 22, 0.94) 0%,
+      rgba(4, 14, 36, 0.78) 34%,
+      rgba(6, 20, 44, 0.45) 62%,
+      rgba(8, 26, 48, 0.2) 100%
+    ), #1a1410 url(${publicPath('hero-bg.png')}) 48% 46% / cover no-repeat`,
+            }}
+          />
           <div className="section-inner hero__content">
             <p className="eyebrow">Join us</p>
             <h1 className="hero__title">App Incubator</h1>
